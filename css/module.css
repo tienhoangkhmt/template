@@ -1,0 +1,12 @@
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.d-flex-cer {
+  display: flex;
+  align-items: center;
+}
+
+.ju-sb {
+  justify-content: space-between;
+}
