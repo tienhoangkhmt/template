@@ -1,41 +1,30 @@
-*{
-  margin: 0;
-  padding: 0;
-}
-
 header {
   background-color: #f4f6f7;
 }
 .header {
-  width: 1200px;
-  margin: auto;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
 }
 .header__title {
   width: 439px;
   padding: 15px 0;
-  padding-right: 52px;
-  justify-content: space-between;
+  padding-right: 60px;
   box-sizing: border-box;
 }
 .header__list {
   width: 293px;
-  padding: 0 50px;
+  padding: 15px 47px;
   border-left: 1px solid #dfe5e8;
   border-right: 1px solid #dfe5e8;
+  height: 100%;
   box-sizing: border-box;
 }
 .header__nav{
   width: 440px;
   padding-left: 28px;
-  justify-content: space-between;
 }
 .header__nav nav {
   padding-left: 10px;
-}
-.header__nav ul{
-  list-style: none;
 }
 .header__nav ul li {
   padding-left: 30px;
@@ -45,9 +34,8 @@ header {
   font-size: 14px;
 }
 header a {
-  text-decoration: none;
   color: #5f727f;
-  padding-right: 12px;
+  padding-right: 16px;
 }
 header p{
   color: #5f727f;
@@ -72,4 +60,8 @@ i.fa-angle-right {
 i.fas.fa-angle-right {
   padding-right: 5px;
   font-weight: 300;
+}
+i.fas.fa-headphones {
+  font-size: 16px;
+  padding-right: 5px;
 }

@@ -1,0 +1,48 @@
+.menu {
+  align-items: center;
+  padding: 30px 0;
+}
+.menu .menu__navbar {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+.menu .menu__navbar .menu-item{
+  font-size: 13px;
+  padding-right: 50px;
+}
+.menu .menu__navbar .menu-item a {
+  color: #3c3950;
+}
+.menu--logo > .logo-title h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+.menu--logo > .logo-title h1 > span {
+  font-weight: 900;
+}
+.menu-item > .groups-supitem > div {
+  padding-right: 22px;
+}
+.menu-item > .groups-supitem  .flag-english {
+  padding-left: 15px;
+}
+.menu-item > .groups-supitem > .bag{
+  position: relative;
+}
+.menu-item > .groups-supitem > .bag::after {
+  content: "2";
+  position: absolute;
+  bottom: 0;
+  margin-left: 6px;
+  display: inline-block;
+  height: 19px;
+  width: 32px;
+  color: #fff;
+  text-align: center;
+  background-color:#00bcd4;
+  clip-path: polygon(29% 0, 100% 0, 100% 100%, 29% 100%, 0 50%);
+}
+
+i.fas.fa-search {
+  font-size: 20px;
+}

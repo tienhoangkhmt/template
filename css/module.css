@@ -1,5 +1,11 @@
+.mx-width {
+  max-width: 1200px;
+  margin: auto;
+}
+
 .d-flex {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
 }
 .d-flex-cer {

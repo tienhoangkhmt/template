@@ -5,17 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
     <title>Template</title>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/module.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      <div class="header d-flex">
-        <div class="header__title d-flex-cer">
+      <div class="header mx-width d-flex">
+        <div class="header__title ju-sb d-flex-cer">
           <p class="header__title--location">
             <i class="fas fa-map-marker-alt"></i>
             19th Ave New York, NY 95822, USA</p>
@@ -46,7 +49,7 @@
             <i class="fab fa-pinterest"></i>
           </a>
         </div>
-        <div class="header__nav d-flex-cer">
+        <div class="header__nav ju-sb d-flex-cer">
           <nav>
             <ul class="d-flex">
               <li>
@@ -73,5 +76,53 @@
         </div>
       </div>
     </header>
+    <div class="menu ju-sb d-flex mx-width">
+      <nav class="menu__navbar">
+        <ul class="d-flex">
+          <li class="menu-item">
+            <a href="#">HOME</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">PAGES</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">BLOG</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">PORTFOLIOS</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">SHOP</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">FEATURES</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">ELEMENTS</a>
+          </li>
+          <li class="menu-item">
+            <div class="groups-supitem d-flex">
+              <div class="flag-english">
+                <img src="images/640px-Flag_of_the_United_Kingdom.svg.png" height="13px" width="20px" alt="oi hong">
+              </div>
+              <div class="search">
+                <i class="fas fa-search"></i>
+              </div>
+              <div class="bag">
+                <img src="images/Shape 5.png" alt="oi hong">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu--logo d-flex">
+        <div class="logo-img">
+          <img src="images/logo.png" alt="oi hong">
+        </div>
+        <div class="logo-title">
+          <h1>THE<span>GEM</span></h1>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
