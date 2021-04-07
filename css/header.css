@@ -1,5 +1,15 @@
 header {
   background-color: #f4f6f7;
+  border-bottom: 1px solid #ced3d6;
+  position: relative;
+}
+header::after {
+  content: "";
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #00bcd4;
 }
 .header {
   font-family: 'Source Sans Pro', sans-serif;
@@ -37,7 +47,7 @@ header a {
   color: #5f727f;
   padding-right: 16px;
 }
-header p{
+header p {
   color: #5f727f;
 }
 .header button {  
@@ -59,7 +69,7 @@ i.fa-angle-right {
 }
 i.fas.fa-angle-right {
   padding-right: 5px;
-  font-weight: 300;
+  font-weight: 300
 }
 i.fas.fa-headphones {
   font-size: 16px;
@@ -67,34 +77,36 @@ i.fas.fa-headphones {
 }
 
 @media all and (max-width: 576px) {
-  .header__title {
-    width: 100vh;
-    justify-content: space-evenly !important; 
-    padding-right: 0;
+  header {
+    display: none !important; 
+  }
+}
+@media all and (max-width:768px) and (min-width:576px) {
+  .header {
+    justify-content: center;
   }
   .header__list {
     border: none;
-    width: 100%;
-    justify-content: space-evenly;
-    padding: 15px 0;
+  }
+}
+@media all and (max-width: 992px) and (min-width: 768px) {
+  .header {
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .header__title {
+    padding-right: 0;
+  }
+  .header__list {
+    display: none !important;
   }
   .header__nav {
     padding-left: 0;
-    width: 100%;
-    justify-content: space-around !important;
-    padding-bottom: 15px;
   }
   .header__nav nav {
     padding-left: 0;
   }
-  header a {
-    padding: 0;
-  }
   .header__nav ul li {
-    padding-left: 0;
-  }
-
-  i.fas.fa-angle-right {
-    padding-left: 5px;
+    padding: 0 30px 0 0;
   }
 }

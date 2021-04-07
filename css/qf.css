@@ -1,0 +1,54 @@
+.qf {
+  justify-content: space-between;
+  padding: 148px 0 134px 0;
+}
+
+.card {
+  width: 345px;
+  height: 275px;
+  flex-wrap: nowrap;
+  align-items:unset;
+}
+.card--title {
+  padding-right: 75px;
+}
+.card--title h3 {
+  color: #3c3950;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+}
+.card--title p {
+  color: #94a1aa;
+  padding-top: 44px;
+  font-size: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.card--title button {
+  margin-top:57px;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  width: 150px;
+}
+@media all  and (max-width:576px) {
+  .qf {
+    padding: 70px 0 40px 0;
+  }
+  .qf > .card {
+    width: 100%;
+    text-align: center;
+    height: auto;
+    padding: 10px 0;
+  }
+}
+@media all and (min-width: 576px) and (max-width: 768px) {
+  .qf {
+    justify-content: center;
+  }
+  .qf > .card {
+    padding: 10px 0;
+  }
+}
+
