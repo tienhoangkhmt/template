@@ -125,6 +125,7 @@
 .footer__menu .container > p {
   color: #8896a2;
   font-size: 13px;
+  font-family: 'SourceSansPro', sans-serif;
 }
 .footer__menu .container p > span {
   color: #00bcd4;
@@ -138,6 +139,7 @@
 }
 .footer__menu .container nav ul .pdd {
   border-right: 1px solid #333146;
+  font-family: 'SourceSansPro', sans-serif;
 }
 .footer__menu--follow {
   padding-right: 20px;

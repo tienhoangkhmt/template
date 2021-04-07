@@ -12,6 +12,7 @@
   font-weight: 300;
 }
 .studies-text {
+  max-width: 1200px;
   color: #5f727f;
   text-align: center;
   font-size: 17px;
@@ -36,11 +37,13 @@
   text-align: center;
   margin-top: 115px;
   margin-bottom: 85px;
+  
 }
 .studies__groups > .btn {
   width: 140px;
   height: 30px;
   border-radius: 24px;
+  font-family: 'Montserrat', sans-serif;
 }
 .studies__groups > .btn:hover {
   cursor: pointer;

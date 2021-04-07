@@ -183,9 +183,39 @@
   .vacancies__tabs {
     margin: 0;
   }
+  .vacancies__tabs .vacancies__tabs--active {
+    width: auto;
+  }
   .vacancies h2 {
     margin-top: 20px;
     text-align: center;
   }
 }
-
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  .vacancies h2 {
+    text-align: center;
+    margin: 10px 0;
+  }
+  .vacancies__nav{
+    width: 100%;
+  }
+  .vacancies__tabs {
+    margin-left: 0;
+    width: 100%;
+  }
+  .vacancies__nav--list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .vacancies__nav--list .vacancies-items:nth-child(n+2) {
+    margin:0 ;
+  }
+  .vacancies__tabs--list {
+    text-align: center;
+    margin: 10px 0;
+  }
+  .vacancies__tabs .vacancies__tabs--active {
+    margin: auto;
+  }
+}
