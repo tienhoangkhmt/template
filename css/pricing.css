@@ -1,3 +1,6 @@
+:root {
+  --co-tim:#3c3950;
+}
 .pricing__columns {
   display: flex;
   flex-wrap: wrap;
@@ -8,7 +11,7 @@
   font-family: 'SourceSansPro' ,sans-serif;
   font-size: 16px;
   text-align: center;
-  margin:0 0 115px 0;
+  margin:120px 0 115px 0;
 }
 .pricing--title p {
   color: #5f727f;
@@ -17,10 +20,12 @@
 .pricing--title h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 50px;
+  color: var(--co-tim);
 }
 .pricing--title h3 > span {
   color: #bebdc5;
   font-weight: 300;
+  color: var(--co-tim);
 }
 .pricing__columns > .container {
   background-color: #f0f3f2;
@@ -38,6 +43,10 @@
 .pricing__columns--title  h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
+  color: #b6bfc4;
+}
+.master .pricing__columns--title  h2 {
+  color: var(--co);
 }
 .pricing__columns .container.master {
   transform: translateY(0%);
@@ -62,7 +71,6 @@
   background-color: #a289e8;
 }
 .pricing__columns .container.master > .pricing__columns--title {
-  /* padding-bottom: 50px; */
   height: 120px;
   box-sizing: border-box;
 }
@@ -70,6 +78,11 @@
   position: relative;
   background-color: #ffff;
   border-bottom: 1px solid #dfe5e8;
+}
+.pricing__columns .container.master > .pricing__columns--title p {
+  font-family: 'SourceSansPro';
+  font-size: 16px;
+  color: #c9d1d8;
 }
 .pricing__columns > .master::after {
   content: 'NEW';
@@ -149,5 +162,8 @@
   }
   .pricing--title p {
     margin-top: 30px;
+  }
+  .pricing__columns > .container {
+    flex: auto;
   }
 }

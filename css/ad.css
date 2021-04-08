@@ -36,6 +36,14 @@
   outline: none;
 }
 
+@media all and (max-width: 576px) {
+  .ad .ad--logo h2 {
+    font-size: 40px;
+  }
+  .ad-text p {
+    font-size: 20px;
+  }
+}
 @media all and (max-width: 768px) and (min-width: 0px){
   .ad .container {
     justify-content: center;

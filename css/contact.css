@@ -7,6 +7,8 @@
 }
 .contact .contact--list .contact-items {
   text-align: center;
+  width: 225px;
+  padding: 15px 0;
 }
 .contact .contact--list .contact-items img {
   padding: 14px;

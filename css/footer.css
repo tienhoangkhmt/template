@@ -44,8 +44,8 @@
 .footer__body--list nav {
   margin-top: 25px;
 }
-.footer__body--list li {
-  font-family: 'SourceSansPro', sans-serif;
+.footer__body--list nav ul li {
+  font-family: 'SourceSansPro',sans-serif;
   font-size: 16px;
   color: #99a9b5;
   padding: 6px 0;
@@ -115,9 +115,21 @@
   padding-left: 15px;
 }
 .footer__menu {
+  position: relative;
   padding: 40px 0;
   border-top:1px solid #313646;
   font-family: 'SourceSansPro', sans-serif;
+}
+.footer--scroll {
+  position: absolute;
+  background-color: #161723;
+  top: 0;
+  right: 2%;
+  transform: translateY(-50%);
+}
+.footer--scroll > i {
+  padding: 17px 18px;
+  color: #9d9ea4;
 }
 .footer__menu > .container {
   justify-content: space-between;
@@ -189,11 +201,15 @@
 }
 
 @media all and (max-width: 768px) and (min-width: 0px){
+  .footer {
+    padding: 20px 0;
+  }
   .footer .footer__body p {
     padding: 0 5px;
   }
   .footer__body > div {
     margin: 10px 0;
+    flex: 50%;
   }
   .footer__body--newsletter .email button {
     right: 0;
@@ -213,6 +229,13 @@
   .footer__menu .container > p {
     font-size: 25px;
     text-align: center;
+    order: 3;
+  }
+  .footer__menu--follow {
+    order: 1;
+  }
+  .footer__menu .container nav  {
+    order: 2;
   }
   .footer__menu .container nav ul {
     padding: 15px 0;
@@ -230,5 +253,15 @@
   }
   .footer__body > div {
     flex: 100%;
+  }
+  .footer__body--newsletter .email input {
+    width: 100%;
+    padding-left: 0;
+  }
+  .footer__body--list {
+    padding: 0;
+  }
+  .footer__menu {
+    padding: 40px 0 0 0;
   }
 }
