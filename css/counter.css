@@ -1,0 +1,86 @@
+:root {
+  --green: #b0de79;
+  --blue: #7ee0bf;
+  --tim:#a289e8;
+  --nhatblue: #83bce9;
+}
+.counters {
+  background-color: #3a3c4b;
+}
+.counters--lists {
+  justify-content: space-between;
+  padding-top:127px;
+  padding-bottom: 134px;
+}
+.counter-item {
+  text-align: center;
+}
+.counter-item span{
+  margin-top: 38px;
+}
+.counter-item .item--general {
+  border: 5px solid var(--green);
+  border-radius: 50%;
+  padding: 8px;
+} 
+.counter-item .item--general > .item {
+  width:  146px;
+  height: 146px;
+  border: 1px solid  var(--green);
+  border-radius: 50%;
+  position: relative;
+}
+.counter-item p{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+.counter-item .item--general .item > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.counter-item .span-compa {
+  color:  var(--green);
+}
+.counter-item > .user {
+  border-color:  #7ee0bf;
+}
+.counter-item > .user > .item {
+  border-color: var(--blue);
+}
+.counter-item .span-user {
+  color: var(--blue);
+}
+.counter-item > .nhat {
+  border-color: var(--nhatblue);
+}
+.counter-item > .nhat > .item {
+  border-color: var(--nhatblue);
+}
+.counter-item .span-nhat {
+  color:  var(--nhatblue);
+} 
+.counter-item > .tiem {
+  border-color: var(--tim);
+}
+.counter-item > .tiem > .item {
+  border-color: var(--tim);
+}
+.counter-item .span-tiem {
+  color: var(--tim);
+}
+
+.span-compa, .span-nhat, .span-user, .span-tiem {
+  font-size: 50px;
+}
+
+@media all and (max-width: 576px) {
+  .counters--lists {
+    padding: 50px 0 20px 0;
+    justify-content: space-evenly;
+  }
+  .counter-item {
+    margin-bottom: 30px;
+  }
+}
