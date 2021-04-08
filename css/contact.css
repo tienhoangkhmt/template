@@ -1,0 +1,75 @@
+.contact {
+  background-color: #414352;
+}
+.contact .contact--list {
+  justify-content: space-around;
+  padding: 132px 0 118px 0;
+}
+.contact .contact--list .contact-items {
+  text-align: center;
+  width: 225px;
+  padding: 15px 0;
+}
+.contact .contact--list .contact-items img {
+  padding: 14px;
+  height: 22px;
+  width: 22px;
+}
+.contact .contact--list .contact-items h2 {
+  font-family: 'Montserrat' ,sans-serif;
+  font-weight: 300;
+  font-size: 19px;
+  color: #ffff;
+  padding: 28px 0;
+}
+.contact .contact--list .contact-items img.address {
+  background-color: #00d4aa;
+}
+.contact .contact--list .contact-items img.phone-img {
+  background-color: #00bcd4;
+}
+.contact .contact--list .contact-items img.contacts-img {
+  background-color: #3f70ca;
+}
+.contact .contact--list .contact-items img.house {
+  background-color: #8781bd;
+}
+.contact .contact--list .contact-items p {
+  font-family: 'SourceSansPro' ,sans-serif;
+  font-size: 16px;
+  color: #99a9b5;
+  padding: 5px 0;
+}
+.contact .contact--back {
+  height: 456px;
+  width: 100%;
+  display: flex;
+}
+.contact .contact--back > div {
+  height: 100%;
+  width: 100%;
+  border-top: 1px solid #ccd4da;
+  background-color: #ccd4da;
+}
+.contact .contact--back .back1 {
+  border-top-right-radius: 50px;
+}
+.contact .contact--back .back2 {
+  border-top-left-radius: 50px;
+}
+
+@media all and (max-width: 576px) {
+  .contact .contact--list .contact-items {
+    flex: 30%;
+    padding-top: 20px;
+  }
+  .contact .contact--back {
+    display: none;
+  }
+}
+@media all and (max-width: 400px) {
+  .contact .contact--list .contact-items {
+    flex: 100%;
+    padding-top: 20px;
+  }
+}
