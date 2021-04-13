@@ -1,0 +1,89 @@
+@import '../varibale.scss';
+@import '../mixi/heightWidth.scss';
+@import '../mixi/background.scss';
+@import '../module.scss';
+@import '../mixi/padding.scss';
+@import '../mixi/mixigrops.scss';
+@import '../module.scss';
+
+%font-size {
+  font-size: 50px;
+}
+
+.counters {
+  background-color: $grayDark-35;
+  &--lists {
+    @extend %d-flex;
+    justify-content: space-between;
+    padding-top:127px;
+    padding-bottom: 134px;
+    @include responsive (576px) {
+      padding: 50px 0 20px 0;
+      justify-content: space-evenly;
+    }
+    .counter-item {
+      text-align: center;
+      @include responsive (576px) {
+        margin-bottom: 30px;
+      }
+      span {
+        margin-top: 38px;
+      }
+      .item--general {
+        border: 5px solid $cyan-30;
+        border-radius: 50%;
+        padding: 8px;
+        & > .item {
+          @include height-width(146px, 146px);
+          border: 1px solid $cyan-30;
+          border-radius: 50%;
+          position: relative;
+          img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+      }
+      p {
+        color: $white-90;
+        font-family: 'Montserrat', sans-serif;
+      }
+      .span-compa {
+        color: $cyan-30;
+        @extend %font-size;
+      }
+      & > .user {
+        border-color: $greenBeryl-10;
+        > .item {
+          border-color: $greenBeryl-10;
+        }
+      }
+      .span-user {
+        color: $greenBeryl-10;
+        @extend %font-size;
+      }
+      & > .nhat {
+        border-color: $blue-10;
+        & > .item {
+          border-color: $blue-10;
+        }
+      }
+      .span-nhat {
+        color: $blue-10;
+        @extend %font-size;
+      }
+      & > .tiem {
+        border-color: $violet-20;
+        & > .item {
+          border-color: $violet-20;
+        }
+      }
+      .span-tiem {
+        color:  $violet-20;
+        @extend %font-size;
+      }
+    }
+  }
+}

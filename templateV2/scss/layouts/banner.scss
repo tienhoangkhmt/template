@@ -1,0 +1,87 @@
+@import '../varibale.scss';
+@import '../mixi/heightWidth.scss';
+@import '../mixi/background.scss';
+@import '../module.scss';
+@import '../mixi/padding.scss';
+@import '../mixi/mixigrops.scss';
+
+.banner {
+  @extend %d-flex;
+  @extend %ju-between;
+  @include height-width(638px, auto);
+  @include background-color($gray-10);
+  align-items: center;
+  @include responsive(576px) {
+    height: auto;
+    padding: 20px 0;
+    flex-wrap: inherit;
+  }
+  @include responsive(992px, 576px) {
+    flex-wrap: initial;
+  }
+  &__title {
+    @include height-width(auto, 100%);
+    h2 {
+      font-size: 80px;
+      font-weight: 300;
+      text-shadow: #adb0b7 2px 1px 4px;
+      @include responsive(576px) {
+        font-size: 15px;
+      }
+      @include responsive(992px, 576px) {
+        font-size: 35px;
+      }
+      span {
+        font-size: 80px;
+        font-weight: 900;
+        @include responsive(576px) {
+          font-size: 15px;
+        }
+        @include responsive(992px, 576px) {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+
+  span {
+    color: $grayDark-20;
+    font-size: 27px;
+    @include padding(0, 12px, 0, 12px);
+    @include responsive(576px) {
+      padding: 0;
+    }
+  }
+  p {
+    color: $grayDark-20;
+    text-shadow: #adb0b7 2px 1px 4px;
+    @include padding(65px, 0, 65px, 0);
+    font-size: 25px;
+    font-family:  'Montserrat', sans-serif;
+    @include responsive(576px) {
+      @include padding(20px, 0, 20px, 0);
+      font-size: 15px
+    }
+  }
+  &--services {
+    @include height-width(auto, 252px);
+    font-weight: 700;
+    font-family:  'Montserrat', sans-serif;
+    font-size: 20px;
+  }
+  .btn {
+    height: 50px;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+    &-primary {
+      color:$white-90;
+      background-color: $greenPeace-20;
+    }
+  }
+  
+  i.far.fa-gem {
+    padding-right: 15px;
+  }
+}

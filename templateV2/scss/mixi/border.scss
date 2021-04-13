@@ -1,0 +1,13 @@
+@mixin border($width, $style, $color, $state: null) {
+  @if $state == null {
+    border: $width $style $color;
+  }@else if $state == top {
+    border-top: $width $style $color;
+  }@else if $state == bottom {
+    border-bottom: $width $style $color;
+  }@else if $state == left {
+    border-left: $width $style $color;
+  }@else if $state == right {
+    border-right: $width $style $color;
+  }
+}

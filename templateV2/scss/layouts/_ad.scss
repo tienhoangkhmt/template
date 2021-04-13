@@ -1,0 +1,67 @@
+@import '../varibale.scss';
+@import '../mixi/heightWidth.scss';
+@import '../module.scss';
+@import '../mixi/padding.scss';
+@import '../mixi/mixigrops.scss';
+@import '../module.scss';
+
+.ad {
+  background-color: $gold-90;
+  color: $grayDark-15;
+  padding: 65px 0;
+  .container {
+    display: flex;
+    @extend %ju-between;
+  }
+  .ad--logo {
+    h2 {
+      font: $font-title;
+      font-size: 63px;
+    }
+  }
+  .ad-text {
+    max-width: 320px;
+    text-align: center;
+    p {
+      font-size: 24px;
+      font-family: 'Lato', sans-serif;
+      color: $Brown-10;
+    }
+  }
+  .ad--button {
+    width: 350px;
+
+    button {
+      width: 100%;
+      border-radius: 30px;
+      border: 4px solid $grayDark-22;
+      background-color: $gold-90;
+      color: $grayDark-22;
+      padding:15px 0;
+      font-weight: 700;
+      font-size: 19px;
+      font-family: $font-title;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+@include responsive (576px) {
+  .ad .ad--logo h2 {
+    font-size: 40px;
+  }
+  .ad-text p {
+    font-size: 20px;
+  }
+}
+@include responsive (768px) {
+  .ad .container {
+    justify-content: center;
+  }
+  .ad-text p {
+    padding: 10px 0 20px 0;
+  }
+}

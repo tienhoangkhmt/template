@@ -1,0 +1,81 @@
+@import '../varibale.scss';
+@import '../module.scss';
+@import '../mixi/mixigrops.scss';
+@import '../mixi/heightWidth.scss';
+
+.contact {
+  background-color: $grayDark-33;
+  &--list {
+    @extend %d-flex;
+    justify-content: space-around;
+    padding: 132px 0 118px 0;
+    .contact-items {
+      text-align: center;
+      width: 225px;
+      padding: 15px 0;
+
+      img {
+        @include height-width(22px, 22px);
+        padding: 14px;
+      }
+      img.address {
+        background-color: $greenBeryl-20;
+      }
+      img.phone-img {
+        background-color: $greenPeace-20;
+      }
+      img.contacts-img {
+        background-color: $blue-40;
+      }
+      img.house {
+        background-color: $violet-50;
+      }
+
+      p {
+        font-family: $font-text;
+        font-size: 16px;
+        color: $gray-56;
+        padding: 5px 0;
+      }
+
+      h2 {
+        font-family: $font-title;
+        font-weight: 300;
+        font-size: 19px;
+        color: $white-90;
+        padding: 28px 0;
+      }
+    }
+  }
+  .contact--back {
+    @include height-width(456px, 100%);
+    display: flex;
+    & > div {
+      @include height-width(100%, 100%);
+      border-top: 1px solid $gray-40;
+      background-color: $gray-40;
+    }
+    .back1 {
+      border-top-right-radius: 50px;
+    }
+    .back2 {
+      border-top-left-radius: 50px;
+    }
+  }
+}
+
+@include responsive (576px) {
+  .contact .contact--list .contact-items {
+    flex: 30%;
+    padding-top: 20px;
+  }
+  .contact .contact--back {
+    display: none;
+  }
+}
+@include responsive (400px) {
+  .contact .contact--list .contact-items {
+    flex: 100%;
+    padding-top: 20px;
+  }
+}

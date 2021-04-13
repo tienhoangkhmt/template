@@ -1,0 +1,78 @@
+@import '../varibale.scss';
+@import '../mixi/heightWidth.scss';
+@import '../module.scss';
+@import '../mixi/padding.scss';
+@import '../mixi/mixigrops.scss';
+@import '../module.scss';
+
+.testimonials {
+  text-align: center;
+  @include padding(250px, 0, 115px, 0);
+  @extend %d-flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $white-80;
+  @include responsive(576px) {
+    .testimonials {
+      flex-wrap:initial !important;
+      align-items: center;
+    }
+  }
+
+  span {
+    font-size: 48px;
+    color: $grayDark-22;
+
+    .fa-arrow-left {
+      padding-left: 6px;
+    }
+    .fa-arrow-right {
+      padding-right: 6px;
+    }
+  }
+  &--eclipse {
+    h3 {
+      color: $greenPeace-20;
+      font-size: 16px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        height: 80px;
+        width: 80px;
+        background-color: #b6c6c9;
+        border-radius: 50%;
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%, -150%);
+      }
+    }
+    p {
+      padding: 20px 0 40px 0;
+      font-size: 14px;
+      font-family: $font-text;
+      color: $gray-52;
+    }
+  }
+  &--introduce {
+    p {
+      max-width: 970px;
+      margin: auto;
+      font-family: $font-text;
+      font-size: 24px;
+      color: $gray-53;
+      padding-bottom: 44px;
+    }
+  }
+}
+
+@include responsive (992px) {
+  .testimonials {
+    padding: 50px 0;
+    flex-wrap:initial !important;
+    align-items: center;
+  }
+  .testimonials .testimonials--eclipse h3::after {
+    display: none;
+  }
+}

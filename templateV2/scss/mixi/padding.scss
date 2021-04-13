@@ -1,0 +1,3 @@
+@mixin padding($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  padding: $top $right $bottom $left;
+}

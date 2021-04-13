@@ -1,0 +1,67 @@
+@import '../varibale.scss';
+@import '../mixi/heightWidth.scss';
+@import '../module.scss';
+@import '../mixi/padding.scss';
+@import '../mixi/mixigrops.scss';
+@import '../module.scss';
+
+.column {
+  @extend %d-flex;
+  justify-content: space-around;
+  align-items: initial;
+  &--items {
+    flex: 1 1 30%;
+    font-family: $font-title;
+    @include padding(70px, 0, 70px, 60px);
+    box-sizing: border-box;
+    @include responsive (576px) {
+      padding: 0;
+      text-align: center;
+      flex: 100%;
+    }
+    h2 {
+      font-size: 80px;
+      color: $white-90;
+    }
+    h3 {
+      padding-top: 45px;
+      font-weight: 300;
+      font-size: 36px;
+      color: $white-90;
+      @include responsive (576px) {
+        font-size: 25px;
+      }
+      span {
+        color: $gold-10;
+        font-weight: 900;
+      }
+    }
+    p {
+      color: $grayDark-15;
+      @include padding(35px, 18%, 0, 0);
+      font-weight: 300;
+      font-size: 20px;
+      font-family: $font-text;
+      @include responsive (576px) {
+        padding: 20px 0 20px 0;
+      }
+    }
+  }
+  .turquoise {
+    background-color: #aed581;
+  }
+
+  .darkblue {
+    background-color: #00bcd4;
+  }
+
+  .purple {
+    background-color: #37394c;
+  }
+  .purple p {
+    color: #fff;
+  }
+  .purple h3 {
+    color: #fff;
+  }
+}

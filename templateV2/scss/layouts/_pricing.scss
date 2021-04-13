@@ -1,0 +1,169 @@
+@import '../varibale.scss';
+@import '../mixi/heightWidth.scss';
+@import '../module.scss';
+@import '../mixi/padding.scss';
+@import '../mixi/mixigrops.scss';
+@import '../module.scss';
+
+.pricing {
+  &--title {
+    color: $gray-62;
+    margin:120px 0 115px 0;
+    text-align: center;
+    font-family: $font-text;
+    h3 {
+      font-size: 50px;
+      color: $grayDark-15;
+      & > span {
+        font-weight: 300;
+        color: $grayDark-15;
+      }
+    }
+    p {
+      margin-top: 82px;
+    }
+  }
+  &__columns {
+    @extend %d-flex;
+    justify-content: center;
+    align-items: center;
+    & > div {
+      background-color: $white-70;
+      @include height-width(100%, 293px);
+      text-align: center;
+      flex: 25%;
+      margin: 50px 0;
+    }
+    &--title {
+      h2 {
+        color: $gray-50;
+        font-weight: 300;
+      }
+    }
+    .master {
+      transform: translateY(0%);
+      position: relative;
+      background-color: $white-90;
+      border-bottom: 1px solid $gray-20;
+      &::after {
+        content: 'NEW';
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        font-family: $font-title;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        color: $white-90;
+        top: -3.5%;
+        left: 0;
+        transform: translateX(75%);
+        z-index: 3;
+      }
+      h2 {
+        color: $grayDark-15;
+      }
+    }
+    .pricing__columns--title {
+      text-align: center;
+      padding: 32px;
+      border: 1px solid $gray-20;
+    }
+    .master > .pricing__columns--title {
+      height: 120px;
+      box-sizing: border-box;
+    }
+    .master .pricing__columns--price {
+      background-color: $blue-10;
+    }
+    .insane .pricing__columns--price {
+      background-color: $violet-20;
+    }
+    .advanced .pricing__columns--price {
+      background-color: $greenBeryl-10;
+    }
+    .pricing__columns--title p {
+      font-family: 'SourceSansPro';
+      font-size: 16px;
+      color: #c9d1d8;
+    }
+    &--price {
+      padding: 25px 0;
+      background-color: $cyan-30;
+      color: $white-90;
+      text-align: center;
+      span {
+        font-family: $font-title;
+        font-size: 64px
+      }
+    }
+    .master > .pricing__columns--list {
+      padding-bottom: 23px;
+      button {
+        background-color: #83bce9;
+      }
+    }
+    .pricing__columns--list {
+      padding-top: 28px;
+      border-left: 1px solid $gray-20;
+      border-right: 1px solid $gray-20;
+      color: #6a7b88;
+      font-family: $font-text;
+      p {
+        font-size: 16px;
+        padding: 13px 0;
+        border-bottom: 1px solid $gray-20;
+        &:nth-child(n+4) {
+          text-decoration: line-through;
+          color: $gray-45;
+        }
+        &:last-child {
+          border-bottom: none;
+          background: #ff0000;
+        }
+      }
+      button {
+        margin: 25px 0 50px 0;
+        width: 120px;
+        padding: 13px 0;
+        color: #ffff;
+        font-family: $font-title;
+        font-size: 16px;
+        font-weight: 700;
+        background-color: $grayDark-22;
+        border-radius: 24px;
+        border: none;
+        letter-spacing: 2px;
+        
+        &:focus {
+          outline: none;
+        }
+        & > i {
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+  .bd-bottom {
+    border-bottom: none !important;
+  }
+}
+
+@include responsive(576px) {
+  .pricing--title {
+    margin-bottom: 10px;
+  }
+  .pricing--title h3 {
+    font-size: 30px;
+  }
+  .pricing--title p {
+    margin-top: 30px;
+  }
+  .pricing__columns > div{
+    flex: auto;
+  }
+}
