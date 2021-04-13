@@ -1,0 +1,3 @@
+@mixin margin($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  margin: $top $right $bottom $left;
+}

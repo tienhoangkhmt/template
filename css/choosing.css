@@ -1,0 +1,93 @@
+.choosing {
+  padding: 123px 0 136px 0;
+}
+.choosing > .container {
+  justify-content: space-between;
+}
+.choosing .choosing--title {
+  text-align: center;
+  font-family:  'Montserrat', sans-serif;
+  font-size: 50px;
+  color: #3c3950;
+  padding-bottom: 117px;
+}
+.choosing .choosing--title span {
+  font-weight: 300;
+}
+.choosing .container .card .card--title h3 {
+  position: relative;
+  color: #3c3950;
+  font-weight: 300;
+  font-family:  'Montserrat', sans-serif;
+}
+.choosing .container .card {
+  height: auto;
+  padding: 62px 0;
+  border-bottom: 1px solid #d6dde0;
+}
+.choosing .container .card:nth-child(n+4) {
+  border-bottom: none;
+}
+.choosing .container .card .card--title h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -25%;
+  height: 50px;
+  width: 50px;
+  transform: translateY(-25%);
+  border-radius: 50%;
+  background-color: #46485c;
+}
+.choosing .container .card .card-text p {
+  padding-top: 50px;
+  color: #7c8c96;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media all and (max-width: 576px) {
+  .choosing {
+    padding: 50px 0 0 0;
+  }
+  .choosing .choosing--title {
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+  .choosing > .container {
+    justify-content: center;
+  }
+  .choosing > .container .card {
+    text-align: center;
+    height: 180px;
+  }
+  .choosing .container .card .card--title {
+    padding-right: 0;
+  }
+  .choosing .container .card .card--title h3::before  {
+    left: 0;
+  }
+}
+@media all and (max-width: 768px) and (min-width: 576px) {
+  .choosing {
+    padding: 50px 0 0 0;
+  }
+  .choosing > .container {
+    justify-content: center;
+  }
+  .choosing .container .card .card--title h3::before {
+    display: none;
+  }
+}
+@media all and (min-width: 768px) {
+  .choosing > .container {
+    justify-content: space-evenly;
+  }
+}
+@media all and (max-width: 992px) {
+  .choosing .container .card {
+    border-bottom: 1px solid #d6dde0 !important;
+  }
+  .choosing .container .card .card--title h3::before {
+    display: none;
+  }
+}

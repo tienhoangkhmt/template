@@ -1,0 +1,20 @@
+%d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+%ju-center {
+  justify-content: center
+}
+
+%ju-between {
+  justify-content: space-between;
+}
+
+%ju-around {
+  justify-content: space-around;
+}
+
+%js-evenly {
+  justify-content: space-evenly;
+}

@@ -1,0 +1,81 @@
+// color
+$white-90: #ffff;
+$white-80: #f1f1f2;
+$white-70: #f0f3f2;
+$white-60: #f4f6f7;
+
+$red-90: #ff0000;
+
+$cyan-10: #aed581;
+$cyan-30: #b0de79;
+
+$gold-10: #e7ff89;
+$gold-90: #ffcd46;
+
+$greenBeryl-10: #7ee0bf;
+$greenBeryl-20: #00d4aa;
+
+$greenPeace-40: #079db3;
+$greenPeace-80: #16a7b9;
+$greenPeace-20: #00bcd4;
+$greenPeace-30: #35ace1;
+$greenPeace-60: #35acff;
+// background
+$blue-10: #83bce9;
+$blue-30: #0288d1;
+$blue-40: #3f70ca;
+$blue-60: #2c4eb3;
+
+$violet-20: #a289e8;
+$violet-50: #8781bd;
+
+$gray-10: #e3e8eb;
+$gray-20: #dfe5e8;
+$gray-22: #d6dde0;
+$gray-25: #c9d1d8;
+$gray-35: #ced3d6;
+$gray-40: #ccd4da;
+$gray-45: #bcc7cd;
+$gray-50: #b6bfc4;
+$gray-60: #818e9b;
+$gray-55: #94a1aa;
+$gray-57: #7f8e99;
+$gray-56: #99a9b5;
+$gray-51: #b6c6c9;
+$gray-52: #abb7c1;
+$gray-53: #a9a7b1;
+$gray-54: #8896a2;
+$gray-61: #71828d;
+$gray-62: #5f727f;
+$gray-63: #6a7b88;
+$gray-80: #6c6b7b;
+
+$grayDark-15: #3c3950;
+$grayDark-20: #383a45;
+$grayDark-22: #393d50;
+$grayDark-30: #46485c;
+$grayDark-33: #414352;
+$grayDark-35: #3a3c4b;
+$grayDark-39: #394050;
+$grayDark-36: #37394c;
+$grayDark-40: #393b51;
+$grayDark-41: #313646;
+$grayDark-43: #333146;
+$grayDark-49: #494c64;
+$Brown-10: #53504f;
+
+$black-100: #212331;
+$black-90: #181828;
+$black-80: #161723;
+// font family
+$font-text: 'SourceSansPro' ,sans-serif;
+$font-title: 'Montserrat', sans-serif;
+
+$breakpoints: (
+  default: 0,
+  mb: 576,
+  sm: 768,
+  md: 992,
+  lg: 1200
+)
+

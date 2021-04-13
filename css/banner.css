@@ -1,0 +1,86 @@
+.banner {
+  height: 638px;
+  background-color: #e3e8eb;
+}
+.banner span {
+  color: #383a45;
+  font-size: 27px;
+  padding: 0 12px;
+}
+.banner__title {
+  width: 100%;
+}
+.banner__title > h2{
+  font-weight: 300;
+  font-size: 80px;
+  font-family:  'Montserrat', sans-serif;
+  letter-spacing: 4px;
+  text-shadow: #adb0b7 2px 1px 4px;
+}
+.banner__title span {
+  font-size: 80px;
+  font-weight: 900;
+}
+.banner__title p {
+  color: #3c3950;
+  text-shadow: #adb0b7 2px 1px 4px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  font-size: 25px;
+  font-family:  'Montserrat', sans-serif;
+}
+.banner--services {
+  width: 252px;
+  font-weight: 700;
+  font-family:  'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+.btn {
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+}
+.btn:focus {
+  outline: none;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #00bcd4;
+}
+
+i.far.fa-gem {
+  padding-right: 15px;
+}
+
+@media all and (max-width: 576px) {
+  .banner {
+    height: auto;
+    padding: 20px 0;
+    flex-wrap: inherit;
+  }
+  .banner__title > h2 {
+    font-size: 15px;
+  }
+  .banner__title > h2 > span {
+    font-size: 15px;
+  }
+  .banner__title p {
+    padding: 20px 0;
+    font-size: 15px;
+  }
+  .banner span{
+    padding: 0;
+  }
+}
+@media all and (min-width: 576px) and (max-width: 992px) {
+  .banner {
+    flex-wrap: initial;
+  }
+  .banner__title > h2 {
+    font-size: 35px;
+  }
+  .banner__title > h2 > span {
+    font-size: 35px;
+  }
+}

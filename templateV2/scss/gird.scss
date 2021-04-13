@@ -1,0 +1,20 @@
+@import 'mixi/mixiColum.scss';
+@import './varibale.scss';
+@import './mixi/marigin.scss';
+@import './module.scss';
+
+@each $name, $value in $breakpoints {
+  @media all and (min-width: #{$value}px) {
+    @include columns($name);
+  }
+}
+
+.container {
+  max-width: 1200px;
+  @include margin;
+}
+
+.row {
+  @extend %d-flex;
+}
+

@@ -1,0 +1,132 @@
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.banner {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.banner {
+  height: 638px;
+  width: auto;
+  background-color: #e3e8eb;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media all and (min-width: 0) and (max-width: 576px) {
+  .banner {
+    height: auto;
+    padding: 20px 0;
+    -ms-flex-wrap: inherit;
+        flex-wrap: inherit;
+  }
+}
+
+@media all and (min-width: 576px) and (max-width: 992px) {
+  .banner {
+    -ms-flex-wrap: initial;
+        flex-wrap: initial;
+  }
+}
+
+.banner__title {
+  height: auto;
+  width: 100%;
+}
+
+.banner__title h2 {
+  font-size: 80px;
+  font-weight: 300;
+  text-shadow: #adb0b7 2px 1px 4px;
+}
+
+@media all and (min-width: 0) and (max-width: 576px) {
+  .banner__title h2 {
+    font-size: 15px;
+  }
+}
+
+@media all and (min-width: 576px) and (max-width: 992px) {
+  .banner__title h2 {
+    font-size: 35px;
+  }
+}
+
+.banner__title h2 span {
+  font-size: 80px;
+  font-weight: 900;
+}
+
+@media all and (min-width: 0) and (max-width: 576px) {
+  .banner__title h2 span {
+    font-size: 15px;
+  }
+}
+
+@media all and (min-width: 576px) and (max-width: 992px) {
+  .banner__title h2 span {
+    font-size: 35px;
+  }
+}
+
+.banner span {
+  color: #383a45;
+  font-size: 27px;
+  padding: 0 12px 0 12px;
+}
+
+@media all and (min-width: 0) and (max-width: 576px) {
+  .banner span {
+    padding: 0;
+  }
+}
+
+.banner p {
+  color: #383a45;
+  text-shadow: #adb0b7 2px 1px 4px;
+  padding: 65px 0 65px 0;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media all and (min-width: 0) and (max-width: 576px) {
+  .banner p {
+    padding: 20px 0 20px 0;
+    font-size: 15px;
+  }
+}
+
+.banner--services {
+  height: auto;
+  width: 252px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+.banner .btn {
+  height: 50px;
+  border: none;
+}
+
+.banner .btn:focus {
+  outline: none;
+}
+
+.banner .btn-primary {
+  color: #ffff;
+  background-color: #00bcd4;
+}
+
+.banner i.far.fa-gem {
+  padding-right: 15px;
+}
+/*# sourceMappingURL=banner.css.map */

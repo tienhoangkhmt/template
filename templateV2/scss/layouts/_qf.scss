@@ -1,0 +1,57 @@
+@import '../varibale.scss';
+@import '../mixi/heightWidth.scss';
+@import '../mixi/background.scss';
+@import '../module.scss';
+@import '../mixi/padding.scss';
+@import '../mixi/mixigrops.scss';
+@import '../module.scss';
+
+.qf {
+  @extend %d-flex;
+  @include padding(148px, 0, 134px, 0);
+  justify-content: space-between;
+  align-items: center;
+  @include responsive(576px) {
+    @include padding(70px, 0, 40px, 0);
+  };
+  @include responsive (768px, 576px) {
+    justify-content: center;
+  }
+  .card {
+    @extend %d-flex;
+    @include height-width(275px, 345px);
+    flex-wrap: nowrap !important;
+    align-items:unset;
+    @include responsive(576px) {
+      width: 100%;
+      text-align: center;
+      height: auto;
+      @include padding(10px, 0, 10px, 0);
+    };
+    @include responsive (768px, 576px) {
+      padding: 10px 0;
+      margin: 20px 0;
+    }
+    &--title {
+      padding-right: 75px;
+      h3 {
+        color: $grayDark-15;
+        font-size: 24px;
+      }
+      p {
+        color: $gray-55;
+        padding-top: 44px;
+        font-size: 16px;
+        font-family: 'Source Sans Pro', sans-serif;
+      }
+      button {
+        margin-top:57px;
+        background-color: $greenPeace-20;
+        color: $white-90;
+        border: none;
+        border-radius: 5px;
+        @include height-width(30px, 150px);
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+header {
+  background-color: #f4f6f7;
+  border-bottom: 1px solid #ced3d6;
+  position: relative;
+}
+header::after {
+  content: "";
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #00bcd4;
+}
+.header {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+}
+.header__title {
+  width: 439px;
+  padding: 15px 0;
+  padding-right: 60px;
+  box-sizing: border-box;
+}
+.header__list {
+  width: 293px;
+  padding: 15px 47px;
+  border-left: 1px solid #dfe5e8;
+  border-right: 1px solid #dfe5e8;
+  height: 100%;
+  box-sizing: border-box;
+}
+.header__nav{
+  width: 440px;
+  padding-left: 28px;
+}
+.header__nav nav {
+  padding-left: 10px;
+}
+.header__nav ul li {
+  padding-left: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.header__nav ul li > a {
+  padding: 0;
+  font-size: 14px;
+}
+header a {
+  color: #5f727f;
+  padding-right: 16px;
+}
+header p {
+  color: #5f727f;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.header button {  
+  height: 30px;
+  width: 87px;
+  background-color: #494c64;
+  color: white;
+  border-radius: 5px;
+}
+
+i.fas.fa-map-marker-alt {
+  font-weight: 500;
+}
+i.fab.fa-youtube {
+  color: red;
+}
+i.fa-angle-right {
+  color: #71828d;
+}
+i.fas.fa-angle-right {
+  padding-right: 5px;
+  font-weight: 300
+}
+i.fas.fa-headphones {
+  font-size: 16px;
+  padding-right: 5px;
+}
+
+@media all and (max-width: 576px) {
+  header {
+    display: none !important; 
+  }
+}
+@media all and (max-width:768px) and (min-width:576px) {
+  .header {
+    justify-content: center;
+  }
+  .header__list {
+    border: none;
+  }
+}
+@media all and (max-width: 992px) and (min-width: 768px) {
+  .header {
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .header__title {
+    padding-right: 0;
+  }
+  .header__list {
+    display: none !important;
+  }
+  .header__nav {
+    padding-left: 0;
+  }
+  .header__nav nav {
+    padding-left: 0;
+  }
+  .header__nav ul li {
+    padding: 0 30px 0 0;
+  }
+}

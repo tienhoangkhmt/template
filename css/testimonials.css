@@ -1,0 +1,58 @@
+.testimonials {
+  text-align: center;
+  padding-top: 250px;
+  padding-bottom: 115px;
+  justify-content: space-between;
+  background-color: #f1f1f2;
+}
+.testimonials span {
+  font-size: 48px;
+  color: #393d50;
+}
+.testimonials span .fa-arrow-left {
+  padding-left: 6px;
+}
+.testimonials span .fa-arrow-right {
+  padding-right: 6px;
+}
+.testimonials .testimonials--eclipse h3 {
+  color: #00bcd4;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  position: relative;
+}
+.testimonials .testimonials--eclipse h3::after {
+  content: "";
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  background-color: #b6c6c9;
+  border-radius: 50%;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
+}
+.testimonials .testimonials--eclipse p {
+  padding: 20px 0 40px 0;
+  font-size: 14px;
+  font-family: 'SourceSansPro', sans-serif;
+  color: #abb7c1;
+}
+.testimonials .testimonials--introduce p {
+  max-width: 970px;
+  margin: auto;
+  font-family: 'SourceSansPro', sans-serif;
+  font-size: 24px;
+  color: #a9a7b1;
+  padding-bottom: 44px;
+}
+
+@media all and (max-width: 992px) and (min-width: 0){
+  .testimonials {
+    padding: 50px 0;
+    flex-wrap:initial;
+  }
+  .testimonials .testimonials--eclipse h3::after {
+    display: none;
+  }
+}
